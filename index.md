@@ -121,3 +121,57 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+```glass.css
+/* Glassmorphism base for cards, panels, buttons */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    color: #e0e0ff;
+}
+
+.session-card {
+    background: rgba(255, 255, 255, 0.05); /* semi-transparent */
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.session-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+.resume-btn {
+    background: linear-gradient(135deg, #7dcfff, #ff77ff);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #ff77ff, #7dcfff);
+    transform: scale(1.05);
+}
+
+#search {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
